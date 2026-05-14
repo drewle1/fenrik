@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<story>
+    <title>Der Aufbruch</title>
+    <image>./images/Skaldenfurt_Aufbruch.webp</image>
+    <sound>./sound/Abschied.mp3</sound>
+    <text>
+    <![CDATA[
+Du verabschiedest Dich von deinem Meister. Er gibt dir ein Schwert und etwas Geld.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Skaldenfurt_Wald_Fluss.xml">Ich starte jetzt die Reise.</decission>
+        <decission type="link" href="Skaldenfurt_Dorfladen.xml">Ich kaufe mir noch etwas im Dorfladen</decission>
+    </decissions>
+    <items>
+        <item cnt="1" visibility="visible" chance="100">itm_schwert</item>
+        <item cnt="300" visibility="visible" chance="100">itm_geld</item>
+    </items>
+</story>

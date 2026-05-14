@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<story>
+    <title>Eine Brücke!</title>
+    <image>./images/Finsterwald_bruecke.webp</image>
+    <sound>./sound/Schlucht.mp3</sound>
+    <text>
+    <![CDATA[
+Endlich kommst du an eine Brücke. Die schaut aber nicht sehr vertrauenswürdig aus.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_raetsel.xml">Du gehst über die Brücke</decission>
+    </decissions>
+    <items>
+        <item cnt="1" visibility="hidden" chance="100">itm_proviant</item>
+    </items>
+</story>

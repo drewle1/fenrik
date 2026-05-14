@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<story>
+    <title>Eine magische Quelle</title>
+    <image>./images/Finsterwald_quelle.webp</image>
+    <sound>./sound/Wald.mp3</sound>
+    <text>
+    <![CDATA[
+Deine Begleiterin warnt dich davon zu trinken. 
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Skaldenfurt_Wald_Fluss.xml">Debug: Zurück zum Fluß</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

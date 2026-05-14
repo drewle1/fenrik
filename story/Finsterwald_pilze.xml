@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<story>
+    <title>Leuchtende Pilze</title>
+    <image>./images/Finsterwald_pilze.webp</image>
+    <sound>./sound/Wald.mp3</sound>
+    <text>
+    <![CDATA[
+Am Wegrand siehst Du leuchtende Pilze. 
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_schlucht.xml">Ich gehe einfach weiter.</decission>
+        <decission type="trade" href="this" itemIn="itm_pilz" inCnt="1" itemOut="itm_geld" outCnt="0">Ich nehme einen der Pilze mit.</decission>
+        <decission type="link" href="Finsterwald_pilzvergiftung.xml">Ich esse einen Pilz.</decission>
+        <!-- <decission type="consume" href="this" itemIn="itm_pilz" inCnt="1" itemOut="helth" outCnt="3">Ich esse den Pilz.</decission> -->
+    </decissions>
+    <items>
+        <item cnt="10" visibility="hidden" chance="100">itm_pilz</item>
+        <item cnt="1" visibility="visible" chance="50">itm_kraeuter</item>
+    </items>
+</story>

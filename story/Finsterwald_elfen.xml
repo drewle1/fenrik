@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<story>
+    <title>Umschwirrt von Elfen</title>
+    <image>./images/Finsterwald_elfen.webp</image>
+    <sound>./sound/Wald.mp3</sound>
+    <text>
+    <![CDATA[
+Du wirst von Elfen umschwirrt. Eine beschließt dich zu begleiten
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_quelle.xml">Ich gehe mit der Elfe weiter</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

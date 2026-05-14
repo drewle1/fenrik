@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<story>
+    <title>Eine unüberwindbare Schlucht</title>
+    <image>./images/Finsterwald_schlucht.webp</image>
+    <sound>./sound/Schlucht.mp3</sound>
+    <text>
+    <![CDATA[
+Vor dir macht sich eine scheinbar unüberwindbare Schlucht breit.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_schlucht2.xml">Ich gehe nach links</decission>
+        <decission type="link" href="this">Ich gehe nach rechts</decission>
+        <decission type="link" href="Finsterwald_klettern.xml">Ich versuche nach unten zu klettern</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<story>
+    <title>Besuch beim Dorfältesten</title>
+    <image>./images/Skaldenfurt_Dorfaeltester.webp</image>
+    <sound>./sound/Hintergrund.mp3</sound>
+    <text>
+    <![CDATA[
+Du gehst den gewundenen Pfad zu der etwas abseits gelegenen Hütte des Dorfältesten entlang. Im Dorf herrscht tiefster Frieden, Kinder spielen, die Vögel zwitschern und aus einem Stall ertönt das zufriedene Blöken eines Schafes. Bei dieser schönen Stimmung kannst du dir kaum vorstellen, dass irgendwo, in weiter Ferne unzählige Menschen in großer Gefahr sind und um ihr Leben bangen. Sollst wirklich du, der unerfahrene Schmiedegehilfe aus dem Finsterwald ein ganzes Königreich retten? Du bist so in Gedanken versunken, dass du beinahe nicht gemerkt hättest, wie du fast an der Hütte des alten Salemm vorbeigelaufen wärst. Schnell rufst du dich wieder in die Wirklichkeit zurück und läufst zu der kleinen, mit Blumen geschmückten Hütte zurück und klopfst vorsichtig an ihrer aus dunklem Ebenholz gefertigten Tür. &bdquo;Komm herein!" ruft eine brüchige, dir wohl bekannte Stimme. &bdquo;Komm herein und sei mein Gast!" Du öffnest die Tür und trittst in Salemms gemütliches Wohnzimmer.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Skaldenfurt_Aufbruch.xml">Ich gehe noch einmal zu meinem Meister bevor ich aufbreche</decission>
+    </decissions>
+    <items>
+        <item>none</item>
+    </items>
+</story>

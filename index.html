@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/nvmem.js"></script>
+    <script src="./js/items.js"></script>
+    <script src="./js/ajax.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/overlay.js"></script>
+    <script src="./js/hidden_items.js"></script>
+    <title>Startseite</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            background-color: #222;
+        }
+
+        .fullscreen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+
+        .top-button {
+            position: absolute;
+            top: 33%;              /* Abstand vom oberen Rand */
+            left: 50%;              /* ca. 2/3 der Seitenbreite */
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            z-index: 10;            /* Button über dem Bild */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button class="top-button" onclick="items_set_default();">Neu Starten</button>
+
+    <a href="./story.html">
+        <img src="./images/Titel.webp" alt="Vollbild" class="fullscreen-image">
+    </a>
+</body>
+</html>

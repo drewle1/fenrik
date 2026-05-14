@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<story>
+    <title>Welchen Weg soll ich einschlagen?</title>
+    <image>./images/Skaldenfurt_Wald_Fluss.webp</image>
+    <sound>./sound/Abschied.mp3</sound>
+    <text>
+    <![CDATA[
+Du musst dich eintscheiden, ob du durch den Wald gehen willst oder durch den Fluß.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_links_rechts.xml">Ich gehe durch den Wald.</decission>
+        <decission type="link" href="Skaldenfurt_Wald_Fluss.xml">Ich gehe am Fluss entlang.</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

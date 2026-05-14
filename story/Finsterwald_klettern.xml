@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<story>
+    <title>Eine kritische Kletterpartie</title>
+    <image>./images/Finsterwald_klettern.webp</image>
+    <sound>./sound/Schlucht.mp3</sound>
+    <text>
+    <![CDATA[
+Oh je, das klettern ist schwerer als du gedacht hast.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="fate">
+            Ich klettere weiter!
+            <result weight="1" href="Finsterwald_schlucht.xml" item="helth" cnt="0">'Du hattest Glück, Dir ist nichts passiert.'</result>
+            <result weight="8" href="Finsterwald_pilze.xml" item="helth" cnt="-1">'Du bist abgestürzt und hast Dich verletzt.'</result>
+            <result weight="1" href="Orga_niederlage.xml" item="helth" cnt="-10">'Der Sturz war zu schwer. Du bist tot.'</result>
+        </decission>
+    </decissions>
+    <items>
+    </items>
+</story>

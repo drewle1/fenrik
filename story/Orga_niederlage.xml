@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<story>
+    <title>Du bist tot!</title>
+    <image>./images/Orga_niederlage.webp</image>
+    <sound>./sound/trauriges_ende.mp3</sound>
+    <text>
+    <![CDATA[
+Deine Lebensenergie ist zu Ende. Die Bösen überrennen die ganze Welt.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="reset" href="Skaldenfurt_Schmiede.xml">Ich beginne noch einmal von vorn.</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

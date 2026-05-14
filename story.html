@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/nvmem.js"></script>
+    <script src="./js/items.js"></script>
+    <script src="./js/events.js"></script>
+    <script src="./js/overlay.js"></script>
+    <script src="./js/story.js"></script>
+    <title>Fenrik von Skaldenfurt</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/msg_box.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
+</head>
+<body>
+    <div class="top-section">
+        <div class="image-container">
+            <img src="./images/Titel.webp" alt="Hauptbild">
+            <a onclick="evt_sound_toggle('sound_background')"><img class="sound-overlay" src="./images/sound_off.webp" alt="Sound Icon"></a>
+        </div>
+    </div>
+    
+    <div class="sidebar">
+        <div class="sidebar-top">
+            <h3><img src="./images/abenteuerblatt.webp" alt="Brief"/></h3>
+        </div>
+
+        <div class="sidebar-bottom">
+        </div>
+    </div>
+
+    <div class="bottom-text">
+        <div class="story">
+        <h2>Error</h2>
+            Ups, da ging was schief!
+        </div>
+        <div class="decission">
+            <h3>Was willst Du tun?</h3>
+             <ul>
+              <li><a href="#" onclick="story.load('Skaldenfurt_Schmiede.xml')">Am Anfang der Geschichte weiter machen.</a></li>
+            </ul> 
+        </div>
+    </div>
+
+    <div id="fate-overlay">
+        <div class="overlay-content">
+            <div class="fate-image">
+                <img src="./images/Orga_zufall.webp" alt="Bild">
+            </div>
+            <div class="fate-text">
+                <p>Es liegt nicht mehr in deiner Hand. Das Schicksal entscheidet über dein weiteres Geschick.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="messagebox">
+        <div class="corner tl"></div>
+        <div class="corner tr"></div>
+        <div class="corner bl"></div>
+        <div class="corner br"></div>
+
+        <div class="edge top"></div>
+        <div class="edge bottom"></div>
+        <div class="edge left"></div>
+        <div class="edge right"></div>
+
+        <div class="content">
+            <h2>Wichtige Meldung</h2>
+            <p>Um diese Message Box zu schließen, drücken sie auf "Abbrechen".</p>
+            <div class="action">
+                <a onclick="evt_hide_msgBox();">ok</a>
+            </div>
+        </div>
+    </div>
+   
+    <div id="hiddenItems">
+    </div>
+
+    <audio id="sound_background" autoplay muted loop>
+      <source src="./sound/Dorfleben.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="sound_fate1" autoplay muted loop>
+      <source src="./sound/tick_tack.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="sound_fate2" autoplay muted loop>
+      <source src="./sound/Schicksal.mp3" type="audio/mpeg">
+    </audio>
+
+</body>
+</html>

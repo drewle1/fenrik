@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<story>
+    <title>Das Rätsel des Brückenwächters</title>
+    <image>./images/Finsterwald_raetsel.webp</image>
+    <sound>./sound/Schlucht.mp3</sound>
+    <text>
+    <![CDATA[
+ Der Brückenwächter führt dich in seine Hütte hinein. Dort stellt er dir ein Rätsel.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_bruecke.xml">Ich gehe über die Brücke</decission>
+        <decission type="link" href="Finsterwald_bruecke.xml" required="itm_pilz" reqCnt="1">Ich gehe mit Pilz über die Brücke</decission>
+    </decissions>
+    <items>
+        <item cnt="1" visibility="hidden" chance="100">itm_proviant</item>
+    </items>
+</story>

@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fantasy;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-color: #222;
+}
+
+/* Oberer Bereich (Bild + rechte Leiste) */
+.top-section {
+    height: 66vh; /* 66% der Bildschirmhöhe */
+    display: flex;
+    background-color: #222;
+    width: calc(100vw - 20vw); /* Platz für Sidebar lassen */
+}
+
+/* Linke Seite mit Bild */
+.image-container {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.sound-overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+
+    max-width: 10%;
+    max-height: 10%;
+    width: auto;
+    height: auto;
+}
+
+/* Rechte Grafik-Leiste */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 20vw;        /* oder fixe Breite, z. B. 300px */
+    height: 100vh;
+
+    background-image: url("../images/sidebara_background.webp");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Oberer Bereich wie bisher */
+.sidebar-top {
+    display: flex;
+    flex-wrap: wrap;       /* erlaubt Zeilenumbruch */
+    gap: 6px;
+    align-content: flex-start;
+    overflow-y: auto;
+}
+
+.sidebar-top img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.sidebar-top h3 {
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar-top h3 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.sidebar-top .hover_text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0,0,0,0.5); /* Hintergrundfarbe des Overlays */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Unterer Bereich */
+.sidebar-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.sidebar-bottom img {
+    width: 18%;      /* 5 Bilder nebeneinander */
+    aspect-ratio: 1; /* quadratisch */
+    object-fit: cover;
+    border-radius: 4px; /* optional */
+    min-width: 20px;
+}
+
+.sidebar-item-wrapper {
+    position: relative;
+    max-width: 70px;
+    min-width: 50px;
+    flex: 1 1 70px;   /* NEU: macht die Wrapper zu flexiblen Kacheln */
+}
+
+.sidebar-item-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.sidebar-item-wrapper:hover .hover_text {
+    opacity: 1; /* Text wird sichtbar bei Hover */
+}
+
+.item-count {
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 2px 6px;
+    font-size: 0.8rem;
+    border-radius: 6px;
+
+    pointer-events: none; /* Klicks gehen ans Bild */
+}
+
+/* Unterer Textbereich */
+.bottom-text {
+    height: 33vh; /* Restliche 33% */
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    overflow-y: auto;
+    width: calc(100vw - 20vw); /* gleiche Breite wie top-section */
+}
+
+/* Links in weißer Schrift */
+.bottom-text a {
+    color: white;
+    /*text-decoration: underline;  optional: entfernt Unterstreichung */
+}
+
+.bottom-text a:hover {
+    color: yellow;
+}
+
+.bottom-text a.disabled-link {
+    pointer-events: none; /* Verhindert Klicks, Hover-Effekte etc. */
+    cursor: default;       /* Zeigt normalen Cursor statt Hand */
+    color: gray;          /* Optional: Link grau färben */
+    text-decoration: none; /* Optional: Unterstreichung entfernen */
+}
+
+.decission{
+    margin-top: 20px;
+}
+
+.decission ul {
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+/* Vollbild-Overlay */
+#fate-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(4px);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+/* Overlay-Container */
+.overlay-content {
+    width: 100%;
+    height: 100%;
+    background: #111;
+    border: 3px solid #666;
+    border-radius: 12px;
+    padding: 0;
+    color: white;
+
+    display: flex;
+    flex-direction: column; /* Bild oben, Text unten */
+    /*overflow: hidden*/;
+}
+
+/* Bildbereich (75%) */
+.fate-image {
+    flex: 0 0 85%;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center; /* horizontal zentriert */
+    align-items: center;     /* vertikal zentriert */
+    overflow: hidden;
+}
+
+/* Bild selbst */
+.fate-image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* füllt eine Richtung komplett aus */
+    display: block;
+}
+
+/* Textbereich (25%) */
+.fate-text {
+    flex: 0 0 15%;
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#hiddenItems {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;      /* nicht mehr fixed */
+        width: 100vw;          /* volle Breite */
+        height: auto;          /* Höhe durch Inhalt */
+        z-index: auto;
+        min-height: 150px;
+    }
+
+    .sidebar-top h3 {
+        display: none;
+    }
+
+    .sidebar-bottom {
+        display: flex;
+        flex-wrap: wrap;      /* erlaubt Umbruch */
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .sidebar-bottom img {
+        width: 14%;        /* kleiner als 18% */
+        max-width: 50px;   /* absolute Obergrenze */
+        aspect-ratio: 1;
+        object-fit: cover;
+    }
+
+
+    .top-section {
+        width: 100vw;          /* Sidebar ist ja unten */
+        height: auto;          /* Bild darf wachsen */
+        flex-direction: column;
+    }
+
+    .image-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .bottom-text {
+        width: 100vw;
+        height: auto;
+    }
+}
