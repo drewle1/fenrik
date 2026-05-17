@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<story>
+    <title>Einkaufen im Dorfladen</title>
+    <image>./images/Skaldenfurt_Dorfladen.webp</image>
+    <sound>./sound/Hintergrund.mp3</sound>
+    <text>
+    <![CDATA[
+Hier gibt es Dinge, die du für deine Reise gebrauchen kannst.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Skaldenfurt_Wald_Fluss.xml">Ich starte die Reise.</decission>
+        <decission type="trade" href="this" itemIn="itm_proviant" inCnt="1" itemOut="itm_geld" outCnt="5">Ich kaufe mir Proviant für die Reise. (5 Rautlinge).</decission>
+        <decission type="trade" href="this" itemIn="itm_uhr" inCnt="1" itemOut="itm_geld" outCnt="200">Ich kaufe mir eine schöne Uhr (200 Rautlinge).</decission>
+        <decission type="trade" href="this" itemIn="itm_heiltrunk" inCnt="1" itemOut="itm_geld" outCnt="100">Ich kaufe mir eine Heiltrunk (100 Rautlinge).</decission>
+        <decission type="fate">
+            Debug für fate!
+            <result weight="1" href="Finsterwald_schlucht.xml" item="helth" cnt="0">'Du hattest Glück, Dir ist nichts passiert.'</result>
+            <result weight="8" href="Finsterwald_pilze.xml" item="helth" cnt="-1">'Du bist abgestürzt und hast Dich verletzt.'</result>
+            <result weight="1" href="Orga_niederlage.xml" item="helth" cnt="-10">'Der Sturz war zu schwer. Du bist tot.'</result>
+        </decission>
+    </decissions>
+    <items>
+        <item cnt="5" visibility="hidden" chance="100">itm_proviant</item>
+        <item cnt="1" visibility="hidden" chance="100">itm_uhr</item>
+        <item cnt="3" visibility="hidden" chance="100">itm_heiltrunk</item>
+    </items>
+</story>
