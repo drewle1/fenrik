@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<story>
+    <title>Oh nein!</title>
+    <image>./images/Fluss_Stromschnellen.webp</image>
+    <sound>./sound/Abschied.mp3</sound>
+    <text>
+    <![CDATA[
+Ich würde ja gerne aussteigen, aber es geht nicht meeehhhr!
+    ]]>
+    </text>
+    <decissions>
+        <decission type="fate">
+            Ich fahre weiter weiter!
+            <result weight="1" href="Skaldenfurt_Wald_Fluss.xml" item="helth" cnt="0">'Du hattest Glück, Dir ist nichts passiert.'</result>
+            <result weight="1" href="Skaldenfurt_Wald_Fluss.xml" item="helth" cnt="-1">'Dein Boot ist zerschellt. Verletzt rettest Du dich ans Ufer.'</result>
+            <result weight="1" href="Orga_niederlage.xml" item="helth" cnt="-10">'Du wirst in die Tiefe gerissen. Du bist tot.'</result>
+        </decission>
+    </decissions>
+    <items>
+    </items>
+</story>

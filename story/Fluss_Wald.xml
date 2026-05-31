@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<story>
+    <title>Welchen Weg soll ich einschlagen?</title>
+    <image>./images/Finsterwald_links_rechts.webp</image>
+    <sound>./sound/Abschied.mp3</sound>
+    <text>
+    <![CDATA[
+Ich gehe durch den Wald. Da vorne sehe ich ein Lichtung.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Finsterwald_elfen.xml">Ich betrete die Lichtung.</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

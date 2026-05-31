@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<story>
+    <title>Eine Anlagestelle.</title>
+    <image>./images/Fluss_Boote.webp</image>
+    <sound>./sound/Abschied.mp3</sound>
+    <text>
+    <![CDATA[
+Am Fluss liegen Boote. Willst Du fahren oder laufen?
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Fluss_Boote.xml">Ich gehe zu Fuss weiter.</decission>
+        <decission type="link" href="Fluss_Anlegestelle.xml">Ich fahre mit dem Boot.</decission>
+    </decissions>
+    <items>
+    </items>
+</story>
