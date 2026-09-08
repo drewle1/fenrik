@@ -9,8 +9,8 @@
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_bruecke.xml">Ich gehe über die Brücke</decission>
-        <decission type="link" href="Finsterwald_bruecke.xml" required="itm_pilz" reqCnt="1">Ich gehe mit Pilz über die Brücke</decission>
+        <decission type="link" href="Schlucht_bruecke.xml">Ich gehe über die Brücke</decission>
+        <decission type="link" href="Schlucht_bruecke.xml" required="itm_pilz" reqCnt="1">Ich gehe mit Pilz über die Brücke</decission>
     </decissions>
     <items>
         <item cnt="1" visibility="hidden" chance="100">itm_proviant</item>

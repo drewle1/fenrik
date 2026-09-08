@@ -9,9 +9,9 @@ Am Wegrand siehst Du leuchtende Pilze.
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_schlucht.xml">Ich gehe einfach weiter.</decission>
+        <decission type="link" href="Schlucht_ankunft.xml">Ich gehe einfach weiter.</decission>
         <decission type="trade" href="this" itemIn="itm_pilz" inCnt="1" itemOut="itm_geld" outCnt="0">Ich nehme einen der Pilze mit.</decission>
-        <decission type="link" href="Finsterwald_pilzvergiftung.xml">Ich esse einen Pilz.</decission>
+        <decission type="link" href="Schlucht_pilzvergiftung.xml">Ich esse einen Pilz.</decission>
         <!-- <decission type="consume" href="this" itemIn="itm_pilz" inCnt="1" itemOut="helth" outCnt="3">Ich esse den Pilz.</decission> -->
     </decissions>
     <items>

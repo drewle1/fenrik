@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <story>
-    <title>Eine Alagestelle</title>
+    <title>Eine Alegestelle</title>
     <image>./images/Fluss_Anlegestelle.webp</image>
     <sound>./sound/Abschied.mp3</sound>
     <text>
     <![CDATA[
-Hier ist eine Anlagestelle. Willst Du aussteigen?
+Hier ist eine Anlegestelle. Willst Du aussteigen?
     ]]>
     </text>
     <decissions>

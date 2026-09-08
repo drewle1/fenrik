@@ -34,8 +34,6 @@ Was könnte das wohl sein? Ratlos blickst du zu deinem Onkel hinüber, der im hi
 Doch er ist so in seine Arbeit vertieft, dass er das Geräusch nicht gehört hat. Achselzuckend willst du dich wieder an die 
 Arbeit machen, da ertönt das Scharren erneut, diesmal lauter. Was könnte das wohl sein? <br/>
 
-<br/><a onclick="evt_show_msgBox('Zufallsfund!', 'Du hast Heilkräuter gefunden. Damit kannst du dein Leben wieder etwas auffrischen.<br/>Setze sie klug ein!')">Msg-Box öffnen</a><br/>
-
     ]]>
     </text>
     <decissions>

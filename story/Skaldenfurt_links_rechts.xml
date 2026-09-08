@@ -9,8 +9,8 @@ Der Weg gabelt sich. Willst du nach links oder rechts gehen?
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_elfen.xml">Ich gehen nach rechts</decission>
-        <decission type="link" href="Finsterwald_pilze.xml">Ich gehen nach links</decission>
+        <decission type="link" href="Elfen_begegnung.xml">Ich gehen nach rechts</decission>
+        <decission type="link" href="Schlucht_pilze.xml">Ich gehen nach links</decission>
     </decissions>
     <items>
         <item cnt="1" visibility="visible" chance="50">itm_kraeuter</item>

@@ -9,7 +9,7 @@ Du musst dich eintscheiden, ob du durch den Wald gehen willst oder durch den Flu
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_links_rechts.xml">Ich gehe durch den Wald.</decission>
+        <decission type="link" href="Skaldenfurt_links_rechts.xml">Ich gehe durch den Wald.</decission>
         <decission type="link" href="Fluss_Boote.xml">Ich gehe am Fluss entlang.</decission>
     </decissions>
     <items>

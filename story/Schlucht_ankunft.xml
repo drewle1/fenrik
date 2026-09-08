@@ -9,9 +9,9 @@ Vor dir macht sich eine scheinbar unüberwindbare Schlucht breit.
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_schlucht2.xml">Ich gehe nach links</decission>
+        <decission type="link" href="Schlucht_wanderung.xml">Ich gehe nach links</decission>
         <decission type="link" href="this">Ich gehe nach rechts</decission>
-        <decission type="link" href="Finsterwald_klettern.xml">Ich versuche nach unten zu klettern</decission>
+        <decission type="link" href="Schlucht_klettern.xml">Ich versuche nach unten zu klettern</decission>
     </decissions>
     <items>
     </items>

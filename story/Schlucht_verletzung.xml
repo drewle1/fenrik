@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<story>
+    <title>Ein Absturz</title>
+    <image>./images/tbd.webp </image>
+    <sound>./sound/Schlucht.mp3</sound>
+    <text>
+    <![CDATA[
+Aua, aua, alles tut weh.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Schlucht_hoehle.xml">Du beißt die Zähne zusammen und läufst weiter.</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

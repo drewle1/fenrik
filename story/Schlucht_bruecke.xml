@@ -9,7 +9,7 @@ Endlich kommst du an eine Brücke. Die schaut aber nicht sehr vertrauenswürdig 
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_raetsel.xml">Du gehst über die Brücke</decission>
+        <decission type="link" href="Schlucht_raetsel.xml">Du gehst über die Brücke</decission>
     </decissions>
     <items>
         <item cnt="1" visibility="hidden" chance="100">itm_proviant</item>

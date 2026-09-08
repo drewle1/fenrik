@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<story>
+    <title>Am Grund der Schlucht</title>
+    <image>./images/tbd.webp</image>
+    <sound>./sound/Schlucht.mp3</sound>
+    <text>
+    <![CDATA[
+Du bist unten angekommen.
+    ]]>
+    </text>
+    <decissions>
+        <decission type="link" href="Schlucht_hoehle.xml">Du läufst weiter.</decission>
+    </decissions>
+    <items>
+    </items>
+</story>

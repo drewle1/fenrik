@@ -9,7 +9,7 @@ Ich gehe durch den Wald. Da vorne sehe ich ein Lichtung.
     ]]>
     </text>
     <decissions>
-        <decission type="link" href="Finsterwald_elfen.xml">Ich betrete die Lichtung.</decission>
+        <decission type="link" href="Elfen_begegnung.xml">Ich betrete die Lichtung.</decission>
     </decissions>
     <items>
     </items>

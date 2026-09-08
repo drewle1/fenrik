@@ -12,8 +12,8 @@ Ich würde ja gerne aussteigen, aber es geht nicht meeehhhr!
         <decission type="fate">
             Ich fahre weiter weiter!
             <result weight="1" href="Skaldenfurt_Wald_Fluss.xml" item="helth" cnt="0">'Du hattest Glück, Dir ist nichts passiert.'</result>
-            <result weight="1" href="Skaldenfurt_Wald_Fluss.xml" item="helth" cnt="-1">'Dein Boot ist zerschellt. Verletzt rettest Du dich ans Ufer.'</result>
-            <result weight="1" href="Orga_niederlage.xml" item="helth" cnt="-10">'Du wirst in die Tiefe gerissen. Du bist tot.'</result>
+            <result weight="7" href="Skaldenfurt_Wald_Fluss.xml" item="helth" cnt="-2">'Dein Boot ist zerschellt. Verletzt rettest Du dich ans Ufer.'</result>
+            <result weight="2" href="Orga_niederlage.xml" item="helth" cnt="-10">'Du wirst in die Tiefe gerissen. Du bist tot.'</result>
         </decission>
     </decissions>
     <items>
